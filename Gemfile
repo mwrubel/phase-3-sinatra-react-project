@@ -15,7 +15,8 @@ gem "rack-contrib", "~> 2.3"
 # More Rack middleware! Used to handle CORS requests
 # https://github.com/cyu/rack-cors
 gem "rack-cors", "~> 1.1"
-
+gem "pry", "~> 0.14.1"
+gem "pry-nav"
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
@@ -36,7 +37,7 @@ gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
-  gem "pry", "~> 0.14.1"
+  
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
