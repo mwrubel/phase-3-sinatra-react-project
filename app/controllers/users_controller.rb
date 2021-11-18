@@ -3,7 +3,6 @@ class UsersController < ApplicationController
 
     #index route
     get '/users' do
-        binding.pry
       users = User.all
       users.to_json(include: :games)
 
