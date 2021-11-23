@@ -22,9 +22,7 @@ class UsersController < ApplicationController
     post '/users' do
         user = User.create(
           name: params[:name],
-          money: params[:money],
-          wins: params[:wins],
-          total_games: params[:total_games])
+          money: params[:money])
         user.to_json
       end
 
@@ -32,9 +30,7 @@ class UsersController < ApplicationController
     patch '/users/:id' do
         user = User.find_by(id: params[:id])
         user.update(name: params[:name], 
-            money: params[:money], 
-            wins: params[:wins], 
-            total_games: params[:total_games])
+            money: params[:money])
         user.to_json
     end
 

@@ -15,13 +15,12 @@ ActiveRecord::Schema.define(version: 2021_11_15_154103) do
   create_table "games", force: :cascade do |t|
     t.integer "user_id"
     t.boolean "won_game"
+    t.integer "money"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "money"
-    t.integer "wins"
-    t.integer "total_games"
   end
 
 end

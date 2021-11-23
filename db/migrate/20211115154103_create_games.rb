@@ -3,6 +3,7 @@ class CreateGames < ActiveRecord::Migration[6.1]
     create_table :games do |t|
       t.integer :user_id
       t.boolean :won_game
+      t.integer :money
+    end
   end
-end
 end
